@@ -18,6 +18,6 @@ public class Executive extends SalariedEmployee{
 
     @Override
     public void work() {
-        System.out.println(getName() + " is enjoying a nice round of golf");
+        System.out.println(getName() + " playing golf since " + getHireDate());
     }
 }

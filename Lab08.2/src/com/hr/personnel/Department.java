@@ -62,6 +62,7 @@ public class Department {
             //downcast the Employee reference (employee{i}) to specific type SalariedEmployees.
             //then we can call SalariedEmployee-specific methods (like takeVacation())
             //first, we will ask Employees[i], "are you really a SalariedEmployee?"
+            // Note: instanceof does a
             if (employees[i] instanceof SalariedEmployee) {
                 SalariedEmployee semp = (SalariedEmployee) employees[i];
                 semp.takeVacation();
