@@ -46,10 +46,26 @@ public class Department {
             System.out.println(employees[i]);  // toString() automatically called
         }
     }
-
     public void workEmployees() {
         for (int i = 0; i < currentIndex; i++) {
             employees[i].work();
+        }
+    }
+    public void payEmployees() {
+        for(int i = 0; i < currentIndex; i++) {
+            employees[i].pay();
+        }
+    }
+    //forced vacation for all salaried employees
+    public void holidayBreak() {
+        for (int i = 0; i < currentIndex; i++) {
+            //downcast the Employee reference (employee{i}) to specific type SalariedEmployees.
+            //then we can call SalariedEmployee-specific methods (like takeVacation())
+            //first, we will ask Employees[i], "are you really a SalariedEmployee?"
+            if (employees[i] instanceof SalariedEmployee) {
+                SalariedEmployee semp = (SalariedEmployee) employees[i];
+                semp.takeVacation();
+            }
         }
     }
 

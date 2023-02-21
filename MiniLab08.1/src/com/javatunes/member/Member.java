@@ -13,6 +13,8 @@ public class Member {
     public Member() {
         // NOTE: there is a call to super() here! as the first line of code
         // What's the superclass of Member?  Is there a no-arg ctor in that class?
+        // Is there a no-arg ctor in that class? YES there is.
+        super();
         System.out.println("Member ctor");
     }
 }

@@ -21,7 +21,10 @@ public class HourlyEmployee extends Employee {
         this(name, hireDate, rate); // delegate to neighboring ctor for name, hours
         setHours(hours);            // handle rate myself, by delegating to setter
     }
-
+    @Override
+    public void pay(){
+        System.out.println(getName() + " is paid hourly " + (getRate() * getHours()));
+    }
     public double getRate() {
         return rate;
     }
@@ -37,7 +40,8 @@ public class HourlyEmployee extends Employee {
     public void setHours(double hours) {
         this.hours = hours;
     }
+    @Override
     public String toString(){
-        return String.format("Hourly Employee: %s, working hard since: %s, for %s hours a week at %s an hour.", getName(), getHireDate(), getRate(), getHours());
+        return super.toString() + " hour=" + getHours() + " rate=" + getRate();
     }
 }
