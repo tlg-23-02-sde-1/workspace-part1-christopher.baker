@@ -22,5 +22,4 @@ public interface TaxPayer {
     
     public void payTaxes();
     public String getName();
-
 }

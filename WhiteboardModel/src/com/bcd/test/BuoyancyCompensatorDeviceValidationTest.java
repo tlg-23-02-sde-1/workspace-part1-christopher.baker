@@ -1,5 +1,4 @@
 package com.bcd.test;
-
 import com.bcd.BuoyancyCompensatorDevice;
 import com.bcd.DeviceType;
 
