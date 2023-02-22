@@ -12,12 +12,14 @@
  * For the purposes of this lab, we give you a few wildcarded imports,
  * so you can use the classes in these packages without having to worry about importing them.
  */
-import java.time.*;
-import java.time.format.*;
-import java.time.temporal.TemporalAdjuster;
+
+import java.time.DayOfWeek;
+import java.time.LocalDate;
 import java.time.temporal.TemporalAdjusters;
 
-import static java.time.temporal.TemporalAdjusters.*;
+import static java.time.temporal.TemporalAdjusters.nextOrSame;
+
+
 
 class DerivedDateTimeTest {
 
@@ -115,7 +117,7 @@ class DerivedDateTimeTest {
     public static void testElectionDay() {
 
         LocalDate nov1 = LocalDate.of(2024, 11, 1);
-        LocalDate election = nov1.with(TemporalAdjusters.nextOrSame(DayOfWeek.MONDAY)).plusDays(1);
+        LocalDate election = nov1.with(nextOrSame(DayOfWeek.MONDAY)).plusDays(1);
         System.out.println(election);
         System.out.println(election.getDayOfWeek());
 
