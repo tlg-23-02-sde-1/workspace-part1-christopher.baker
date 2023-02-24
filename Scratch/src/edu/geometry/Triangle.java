@@ -7,10 +7,18 @@ class Triangle extends Geometry {
     private double height;
     
 //constructor
-    
+    public Triangle(){
+
+    }
     public Triangle(double length, double height){
         setLength(length);
         setHeight(height);
+    }
+
+    public Triangle(String shape, double area, double length, double height) {
+        super(shape, area);
+        this.length = length;
+        this.height = height;
     }
 //business method
     

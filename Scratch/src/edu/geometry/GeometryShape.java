@@ -1,5 +1,5 @@
 package edu.geometry;
 
-enum GeometryShape {
+public enum GeometryShape {
     RECTANGLE, SQUARE, CIRCLE, TRIANGLE
 }
