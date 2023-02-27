@@ -1,7 +1,7 @@
 package edu.geometry;
 
-
 public abstract class Geometry {
+
 //fields
     private String shape;
     private double area;
@@ -12,7 +12,7 @@ public abstract class Geometry {
     }
     public Geometry(String shape){
         this();
-        setShape(shape);
+        getShape();
     }
     public Geometry(String shape, double area) {
         this(shape);
@@ -25,9 +25,6 @@ public abstract class Geometry {
 //helper method
 //accessor method get/set/toString
 
-    public void setShape(String shape) {
-        this.shape = shape;
-    }
     public String getShape() {
         return shape;
     }

@@ -1,11 +1,13 @@
+/*
 package edu.geometry.client;
+
 import edu.geometry.Geometry;
 
 import java.awt.*;
 
 class GeometryClient {
     public static void main(String[] args) {
-        Geometry g1 = new Geometry("Circle", + 10);
+        Geometry g1 = new Geometry("Rectangle", + 10);
         System.out.println(g1.getShape());
         System.out.println(g1.getArea());
         System.out.println("The shape is a " + g1.getShape() + " with an area of " + g1.getArea() + " in squared.");
@@ -23,3 +25,4 @@ class GeometryClient {
 //pay all employees
 //holiday break
 }
+*/
